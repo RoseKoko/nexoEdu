@@ -51,24 +51,6 @@ La primera versión corresponde a la **Fase 1 — Base operativa** del roadmap:
 
 Plataforma: aplicación web responsiva (computadora, tablet y celular).
 
----
-
-## Estructura del repositorio
-
-```
-nexoEdu/
-├── docs/                         Documentación del proyecto
-│   ├── requisitos-y-roles.md     Punto de entrada a la documentación
-│   ├── 00-resumen-ejecutivo.md
-│   ├── 01-requisitos-funcionales.md
-│   ├── 02-roles-y-permisos.md
-│   ├── 03-entidades-y-reglas.md
-│   ├── 04-roadmap.md
-│   └── 05-decisiones-pendientes.md
-└── README.md
-```
-
-Las carpetas de código fuente, base de datos, pruebas y evidencias se agregarán conforme avance el proyecto.
 
 ---
 
