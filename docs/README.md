@@ -1,6 +1,6 @@
 # nexoEdu
 
-Plataforma web de gestión escolar para una preparatoria (caso simulado). Centraliza la información de alumnos, padres o tutores, docentes, asistencia y conducta, con acceso por roles y bitácora de acciones sensibles.
+Plataforma web de gestión escolar para una preparatoria. Centraliza la información de alumnos, padres o tutores, docentes, asistencia y conducta, con acceso por roles y bitácora de acciones sensibles.
 
 Proyecto integrador de la materia **Gestión de Proyectos de Software**, Instituto Tecnológico de Tijuana (TecNM).
 Docente: Mtra. María Guadalupe Rodríguez López · Periodo: 23 de septiembre al 25 de noviembre de 2026.
