@@ -1,25 +1,6 @@
-# nexoEdu — Plan de Calidad del Proyecto, Etapa I: Gestión de Calidad
+# nexoEdu — Plan de Calidad del Proyecto
 
-Sep 30, 2026 · @Dylan
-
-## 1. Portada
-
-| Campo | Contenido |
-| --- | --- |
-| Institución | Tecnológico Nacional de México — Instituto Tecnológico de Tijuana |
-| Materia | Gestión de Proyectos de Software |
-| Nombre del proyecto | nexoEdu — plataforma integral para la gestión escolar |
-| Documento | Plan de Calidad del Proyecto — Etapa I: Gestión de Calidad |
-| Versión del documento | 1.0 (línea base) |
-| Integrantes | Dylan Alexis Padilla · Stephanie Ariana Medrano Vargas · Ricardo Alejandro Pineda Gómez |
-| Docente | Mtra. María Guadalupe Rodríguez López |
-| Periodo del proyecto | 23 de septiembre al 25 de noviembre de 2026 |
-| Periodo de la etapa | 23 de septiembre al 6 de octubre de 2026 |
-| Fecha de entrega | 5 de octubre de 2026 |
-
-## 2. Introducción
-
-Este Plan de Calidad define qué parte del sistema escolar se desarrollará durante el periodo académico y con qué criterios se juzgará su calidad. Es la línea base contra la que se medirán las siguientes etapas: planificación, presentación de avances, supervisión y entrega final.
+## Introducción
 
 El proyecto parte de una visión amplia: una plataforma que centralice la información académica, disciplinaria, administrativa y de comunicación de una escuela. Esa visión es demasiado grande para nueve semanas y tres integrantes. Por eso el plan separa con claridad lo que el equipo se compromete a entregar (la base operativa) de lo que queda como evolución futura.
 
