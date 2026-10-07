@@ -6,7 +6,7 @@ El proyecto parte de una visión amplia: una plataforma que centralice la inform
 
 Establecer la calidad desde el inicio evita dos errores comunes: descubrir al final que “terminado” significaba cosas distintas para cada integrante, y dejar que el alcance crezca sin control. Aquí la calidad se define como requisitos verificables, criterios de aceptación medibles, métricas simples, control de cambios y evidencias conservadas. La gestión del proyecto y la calidad del software se tratan como un mismo proceso: lo que no se planifica y registra no se puede demostrar.
 
-## 3. Descripción del proyecto
+## Descripción del proyecto
 
 El sistema es una plataforma de gestión escolar con un solo acceso mediante login y control de permisos por roles (RBAC). Su visión es centralizar la información académica, disciplinaria, administrativa y de comunicación entre escuela, docentes, prefectura, alumnos y padres o tutores.
 
@@ -25,7 +25,7 @@ El sistema es una plataforma de gestión escolar con un solo acceso mediante log
 
 **Escuela destinataria:** caso simulado de una preparatoria (nivel medio superior). El sistema no se desarrolla para una escuela específica; todos los datos de prueba serán ficticios.
 
-## 4. Problemática
+## Problemática
 
 nexoEdu se plantea como un caso simulado: una preparatoria genérica, no una escuela específica. La problemática se deriva de la documentación del proyecto, a partir de lo que el sistema debe resolver. No se usan estadísticas ni datos externos.
 
@@ -43,7 +43,7 @@ nexoEdu se plantea como un caso simulado: una preparatoria genérica, no una esc
 
 **Necesidad de una solución:** un sistema que concentre el flujo escolar principal (alumnos, grupos, asistencia y conducta), restrinja el acceso según el rol y deje registro de las acciones sensibles.
 
-## 5. Justificación
+## Justificación
 
 Construir primero la base operativa resuelve el flujo escolar más frecuente y deja lista la estructura sobre la que crecerán las demás fases.
 
@@ -57,11 +57,9 @@ Construir primero la base operativa resuelve el flujo escolar más frecuente y d
 | Trazabilidad | Bitácora de quién creó, modificó o eliminó información relevante, con fecha y hora. |
 | Crecimiento futuro | Arquitectura modular y datos por ciclo escolar para agregar comunicación, académico, administración y reportes sin rehacer la base. |
 
-El roadmap del proyecto recomienda esta misma base para “validar el flujo escolar principal antes de agregar calificaciones, pagos, inventario avanzado y dashboards”.
+## Objetivos
 
-## 6. Objetivos
-
-### 6.1 Objetivo general
+### Objetivo general
 
 Desarrollar, entre el 23 de septiembre y el 25 de noviembre de 2026, la primera versión funcional de la plataforma de gestión escolar (base operativa), que permita registrar alumnos, padres/tutores, docentes, grados y grupos, controlar la asistencia y los reportes de conducta con evidencias, y ofrecer consulta a padres/tutores, con acceso por roles y bitácora de acciones sensibles, verificando su cumplimiento mediante los criterios y métricas de este plan.
 
@@ -77,15 +75,13 @@ Desarrollar, entre el 23 de septiembre y el 25 de noviembre de 2026, la primera 
 8. Verificar la primera versión con casos de prueba documentados, incluidas pruebas de permisos por rol.
 9. Mantener control de cambios, métricas y evidencias durante todo el proyecto.
 
-## 7. Alcance del proyecto
+## Alcance del proyecto
 
-El compromiso de esta materia es la **Fase 1 — Base operativa** del roadmap. Las fases 2 a 5 son visión futura y no forman parte de la entrega.
-
-### 7.1 Visión completa del sistema
+### Visión completa del sistema
 
 A largo plazo, el sistema contempla 15 módulos: autenticación y acceso, docentes, alumnos, padres o tutores, prefectura, dirección, administración y contaduría, inventario de uniformes, académico, calendario escolar, comunicación y notificaciones, inscripciones y matrícula, pagos y colegiaturas, reportes y dashboards, y auditoría y bitácora.
 
-### 7.2 Incluido (alcance de la primera versión)
+### Alcance de la primera versión
 
 | Área | Qué incluye |
 | --- | --- |
@@ -98,29 +94,7 @@ A largo plazo, el sistema contempla 15 módulos: autenticación y acceso, docent
 | Padres/tutores | Consulta de datos, asistencia, reportes de conducta y evidencias de sus hijos. |
 | Bitácora básica | Registro y consulta de acciones sensibles del alcance inicial. |
 
-Los requisitos de prioridad **Alta** (sección 9) son el compromiso mínimo. Los de prioridad Media y Baja son los primeros en posponerse si el tiempo no alcanza, mediante control de cambios.
-
-### 7.3 No incluido (fuera del alcance de esta entrega)
-
-| Funcionalidad | Fase del roadmap |
-| --- | --- |
-| Notificaciones automáticas (correo, sistema, push) | Fase 2 |
-| Justificación de faltas | Fase 2 |
-| Permisos y autorizaciones de salida | Fase 2 |
-| Avisos generales y mensajes | Fase 2 |
-| Calendario escolar y horarios de clase | Fase 2 |
-| Materias, planes de estudio, tareas, entregas, calificaciones, boletas y kardex | Fase 3 |
-| Pagos, colegiaturas, adeudos, recibos, becas y recargos | Fase 4 |
-| Inventario y ventas de uniformes | Fase 4 |
-| Dashboards, reportes estadísticos y exportación a PDF/Excel | Fase 5 |
-| Inscripciones, reinscripciones y control de documentación | Sin fase asignada (ver sección 21) |
-| Aplicación móvil nativa o PWA | Trabajo futuro (solo web: D-05, D-06; PWA ligada a Fase 2: D-07) |
-
-### 7.4 Trabajo futuro / evolución prevista del sistema
-
-La Fase 2 añadiría comunicación y seguimiento (notificaciones, justificantes, permisos de salida, avisos y calendario). La Fase 3 incorporaría la operación académica, la Fase 4 la gestión económica e inventario, y la Fase 5 los reportes avanzados para dirección. La base de la primera versión (roles, ciclo escolar, alumnos, grupos y bitácora) está pensada para soportar esas fases. **Su mención aquí no es un compromiso de desarrollo durante la materia.**
-
-## 8. Usuarios y actores
+## Usuarios y actores
 
 La visión general contempla siete roles; la primera versión involucra directamente a cinco. Alumno y Administración y contaduría quedan fuera de esta versión.
 
@@ -134,7 +108,7 @@ La visión general contempla siete roles; la primera versión involucra directam
 | Alumno | Consulta su información académica y escolar. | **Fuera del alcance inicial.** No tendrá cuenta propia en la primera versión (D-01); su información la consultan sus padres/tutores. |
 | Administración y contaduría | Pagos, colegiaturas, ventas e inventario de uniformes. | **Fuera del alcance inicial** (Fase 4). La matriz le permite crear y editar alumnos; ver inconsistencia I-03. |
 
-## 9. Requerimientos funcionales del alcance inicial
+## Requerimientos funcionales del alcance inicial
 
 La primera versión compromete 26 requisitos, tomados de los módulos 1, 2, 3, 4, 5 y 15 de los requisitos funcionales y filtrados por la Fase 1 del roadmap. Los permisos citados provienen de la matriz de roles.
 
@@ -171,7 +145,7 @@ La primera versión compromete 26 requisitos, tomados de los módulos 1, 2, 3, 4
 
 **Requisitos del documento general que no entran en esta versión:** justificar faltas, permisos de salida, notificaciones, mensajes a padres, tareas, calificaciones, historial académico, documentos entregados, estado administrativo y generación de reportes exportables (ver 7.3).
 
-## 10. Requerimientos no funcionales
+## Requerimientos no funcionales
 
 Los RNF-01 a RNF-08 vienen de los requisitos no funcionales iniciales del proyecto. RNF-09 y RNF-10 son añadidos del equipo, necesarios para poder medir la calidad; se marcan como tales.
 
@@ -190,7 +164,7 @@ Los RNF-01 a RNF-08 vienen de los requisitos no funcionales iniciales del proyec
 
 El requisito “posibilidad de exportar reportes en formatos comunes” se pospone a la Fase 5 junto con los reportes avanzados.
 
-## 11. Control de acceso y seguridad
+## Control de acceso y seguridad
 
 La seguridad se trata como criterio de calidad central: un error de permisos en este sistema expone datos de menores y familias. Se aplican cinco reglas.
 
@@ -219,7 +193,7 @@ La seguridad se trata como criterio de calidad central: un error de permisos en 
 
 **Valores por definir:** los permisos “Limitado” y “si aplica” no están definidos en la documentación. Mientras no se definan, la primera versión los tratará como **No** (mínimo privilegio), y se registrará en control de cambios cuando se decidan (D-10, D-16, I-12).
 
-## 12. Criterios de calidad
+## Criterios de calidad
 
 La primera versión se considera de calidad solo si cumple los siete criterios siguientes, cada uno con evidencia.
 
@@ -233,7 +207,7 @@ La primera versión se considera de calidad solo si cumple los siete criterios s
 | Rendimiento | Respuesta ágil en las operaciones principales. | Medición de RNF-09 (menos de 3 s) con herramientas del navegador. | Tabla de mediciones con fecha y capturas. |
 | Mantenibilidad | Las siguientes fases se pueden agregar sin rehacer la base. | Revisión de código por un integrante distinto al autor; estructura por módulos (RNF-08). | Revisiones registradas en el repositorio (pull requests o comentarios) y diagrama de arquitectura. |
 
-## 13. Metodología de trabajo
+## Metodología de trabajo
 
 El equipo usará **Scrum adaptado a un equipo de tres integrantes**, con iteraciones (sprints) de dos semanas alineadas a las etapas de la materia.
 
@@ -266,7 +240,7 @@ El equipo usará **Scrum adaptado a un equipo de tres integrantes**, con iteraci
 
 **Gestión de cambios y avances:** todo cambio de alcance pasa por el procedimiento de la sección 18; el avance se mide con las métricas de la sección 16 en el tablero de gestión y el historial del repositorio.
 
-## 14. Organización del equipo
+## Organización del equipo
 
 **Roles confirmados por el equipo.** Stephanie y Ricardo desarrollan la aplicación y Dylan construye la base de datos; los tres deben poder explicar cualquier parte del sistema en las revisiones, y nadie prueba únicamente su propio trabajo.
 
@@ -282,7 +256,7 @@ El equipo usará **Scrum adaptado a un equipo de tres integrantes**, con iteraci
 - Todo cambio de código lo revisa un integrante distinto a su autor antes de integrarse.
 - Las decisiones de alcance se toman por consenso de los tres; si no lo hay, decide el líder y queda registrado.
 
-## 15. Tecnologías y herramientas
+## Tecnologías y herramientas
 
 Las tecnologías principales están definidas. El framework, el reparto entre JavaScript y Python y el almacenamiento de evidencias quedan como decisiones futuras (CC-03), con fecha límite en la sección 20. La elección es libre según la materia, pero debe ser congruente con el proyecto y quedar decidida antes del cierre de la Etapa I (D-22).
 
@@ -301,7 +275,7 @@ Las tecnologías principales están definidas. El framework, el reparto entre Ja
 
 **Restricción de plataforma:** nexoEdu será una aplicación web responsiva (D-05) y no tendrá app nativa en este periodo (D-06). El lenguaje y el framework deben elegirse para desarrollo web.
 
-## 16. Métricas e indicadores de calidad
+## Métricas e indicadores de calidad
 
 Nueve métricas, todas calculables con una hoja de cálculo, el tablero de gestión y el historial del repositorio. Se reportan al cierre de cada sprint.
 
@@ -319,7 +293,7 @@ Nueve métricas, todas calculables con una hoja de cálculo, el tablero de gesti
 
 El tiempo de respuesta (RNF-09) se mide como parte de las pruebas, no como métrica de seguimiento semanal.
 
-## 17. Plan de aseguramiento y control de calidad
+## Plan de aseguramiento y control de calidad
 
 La calidad se revisa en cada paso del desarrollo, no solo al final. Estas son las actividades y su momento.
 
@@ -343,7 +317,7 @@ La calidad se revisa en cada paso del desarrollo, no solo al final. Estas son la
 
 **Prioridad de errores:** alta (bloquea una función o expone datos a un rol no autorizado), media (la función opera con un defecto) y baja (detalle visual o de texto).
 
-## 18. Control de cambios
+## Control de cambios
 
 Ningún cambio al alcance, a los requisitos o a este plan se implementa sin registro y decisión. Este plan (versión 1.0) es la línea base.
 
@@ -372,7 +346,7 @@ Ningún cambio al alcance, a los requisitos o a este plan se implementa sin regi
 | CC-03 | 6 oct 2026 | Posponer I-13 (almacenamiento y tamaño de evidencias) e I-14 (framework y reparto JavaScript/Python) | Requieren analizar opciones fuera de la Etapa I | I-14 bloquea el inicio del código; I-13 bloquea RF-19 | Alta | Pospuesto | Líder del proyecto | Abierto |
 | CC-04 |  |  |  |  |  |  |  |  |
 
-## 19. Riesgos relacionados con la calidad
+## Riesgos relacionados con la calidad
 
 Los dos riesgos más altos son el crecimiento del alcance y la falta de tiempo: el alcance inicial ya es exigente para tres personas en nueve semanas.
 
@@ -391,205 +365,3 @@ Los dos riesgos más altos son el crecimiento del alcance y la falta de tiempo: 
 | R-11 | Tecnologías elegidas tarde o poco conocidas por el equipo | Media | Medio | Medio | Decidir el framework antes del Sprint 1 (7 de octubre) y el almacenamiento de evidencias antes del Sprint 3 (4 de noviembre), priorizando lo que el equipo ya domina. | Todo el equipo |
 
 Nivel = combinación de probabilidad e impacto (probabilidad Alta con impacto Alto o Medio, o probabilidad Media con impacto Alto = Alto; Media/Medio = Medio).
-
-## 20. Decisiones pendientes
-
-Estas decisiones vienen del documento de decisiones pendientes y **no se resuelven en este plan**. Solo se fija cuándo deben decidirse según su impacto en la primera versión; las que afectan solo a fases futuras no bloquean esta entrega.
-
-| ID | Decisión | Impacto sobre el proyecto | Fecha límite | Responsable | Estado |
-| --- | --- | --- | --- | --- | --- |
-| D-01 | ¿Los alumnos tendrán cuenta propia desde la primera versión? | Define si RF-27 entra al alcance y si se prueba el rol Alumno. | 6 oct 2026 | Equipo (validar con docente/escuela) | Resuelta: no (CC-01) |
-| D-02 | ¿Un usuario podrá tener más de un rol? | Cambia el modelo de datos de usuarios y roles (RF-08). | 6 oct 2026 | Base de datos | Resuelta: sí (CC-01) |
-| D-03 | ¿Quién podrá crear usuarios: dirección, administrador o ambos? | Cambia permisos de RF-06 (ver I-04). | 6 oct 2026 | Equipo | Resuelta: solo el Administrador (CC-01) |
-| D-04 | ¿Recuperación de contraseña por correo desde la primera versión? | Requeriría envío de correo; si no, RF-05 queda como restablecimiento por el administrador. | 20 oct 2026 | Equipo | Resuelta: no; el Administrador restablece (CC-02) |
-| D-05 | ¿Será solo una plataforma web responsiva? | Condiciona lenguaje, framework y pruebas de RNF-04. | 6 oct 2026 | Equipo | Resuelta: solo web responsiva (CC-01) |
-| D-06 | ¿Se requiere aplicación móvil nativa? | Si sí, el alcance no es viable en el periodo; se propone como trabajo futuro. | 6 oct 2026 | Equipo | Resuelta: no, trabajo futuro (CC-01) |
-| D-07 | ¿Se desarrollará como PWA para notificaciones push? | Ligado a notificaciones (Fase 2); no bloquea la primera versión. | Fase 2 | Equipo | \[PENDIENTE\] |
-| D-08 | Canales de notificación iniciales (correo, sistema, push) | Fuera del alcance inicial (Fase 2). | Fase 2 | Equipo | \[PENDIENTE\] |
-| D-09 | Pagos: registro manual o pasarela, validez fiscal, becas, descuentos y recargos | Fuera del alcance inicial (Fase 4). | Fase 4 | Equipo | \[PENDIENTE\] |
-| D-10 | ¿Qué información disciplinaria podrá ver el alumno? | Afecta RF-27 y el permiso “si aplica”. Mientras tanto: no ve conducta. | Junto con D-01 | Equipo | No aplica en la primera versión (D-01) |
-| D-11 | ¿Qué información disciplinaria solo podrá ver el padre/tutor? | Afecta RF-24. | 20 oct 2026 | Equipo | Resuelta: reportes y evidencias completos (CC-02) |
-| D-12 | ¿Qué personal puede validar justificantes? | Justificantes en Fase 2. | Fase 2 | Equipo | \[PENDIENTE\] |
-| D-13 | ¿Qué personal puede autorizar permisos de salida? | Permisos de salida en Fase 2. | Fase 2 | Equipo | \[PENDIENTE\] |
-| D-14 | ¿Las faltas justificadas afectan los reportes de asistencia de forma distinta? | Depende de justificantes (Fase 2); conviene prever el campo en el modelo de asistencia. | Fase 2 | Base de datos | \[PENDIENTE\] |
-| D-15 | ¿Dirección podrá editar información o solo consultarla y autorizarla? | Afecta permisos de RF-14 (ver I-07). | 20 oct 2026 | Equipo | Resuelta: edita según la matriz (CC-02) |
-| D-16 | ¿Administración podrá ver información académica o disciplinaria? | Rol fuera del alcance inicial; define el permiso “Limitado”. | Fase 4 | Equipo | \[PENDIENTE\] |
-| D-17 | ¿Qué datos personales serán obligatorios para alumnos y tutores? | Define validaciones de RF-10 y RF-12. | 20 oct 2026 | Análisis y documentación | Resuelta: alumno — nombre completo, matrícula, fecha de nacimiento, CURP y grupo; tutor — nombre completo, teléfono, correo y parentesco (CC-02) |
-| D-18 | ¿Qué reportes son indispensables para la primera versión? | Si se exige alguno, entra por control de cambios. | 20 oct 2026 | Equipo | Resuelta: ninguno; solo consultas con filtros (CC-02) |
-| D-19 | ¿Cuánto tiempo se conservarán las evidencias y archivos adjuntos? | Política de almacenamiento de RF-19. No bloquea el desarrollo. | 3 nov 2026 | Equipo | Resuelta: durante el ciclo escolar; se archivan al cerrarlo (CC-02) |
-| D-20 | ¿Se requiere respaldo automático diario? | Define RNF-06; mientras tanto, respaldo manual documentado. | 3 nov 2026 | Base de datos | Resuelta: respaldo manual documentado (CC-02) |
-| D-21 | ¿Quién podrá consultar la bitácora completa? | Afecta RF-26 (ver I-06). | 20 oct 2026 | Equipo | Resuelta: Administrador y Dirección (CC-02) |
-| D-22 *(añadida)* | Lenguaje, framework, base de datos y herramientas | Requerida por la materia para esta etapa; condiciona el repositorio y el código inicial. | Inicio del Sprint 1 (7 oct 2026) | Todo el equipo | Parcial: framework y reparto JavaScript/Python pospuestos (CC-03, I-14) |
-| D-23 *(añadida)* | Tipos de archivo y tamaño máximo de evidencias | Define validaciones de RF-19. | 3 nov 2026 | Equipo | Tipos resueltos: JPG, PNG y PDF. Tamaño y almacenamiento pospuestos (CC-03, I-13) |
-
-## 21. Inconsistencias o decisiones por confirmar
-
-Se encontraron 12 contradicciones o vacíos entre los documentos del proyecto. No se resuelven en silencio: cada una indica cómo la trata este plan de forma provisional, sujeto a confirmación.
-
-| ID | Inconsistencia | Documentos | Tratamiento provisional |
-| --- | --- | --- | --- |
-| I-01 | “Reporte de conducta” e “incidencia disciplinaria” aparecen como cosas distintas, pero solo existe la entidad Reporte de conducta. | 01, 02, 03 | Se tratan como la misma entidad con autor distinto (docente o prefectura) hasta confirmar. |
-| I-02 | Fase 1 necesita asignar docentes a grupos, pero esa función está en el módulo académico (Fase 3). La regla dice “grupos o materias” y las materias son Fase 3. | 01, 03, 04 | Se incluye solo la asignación docente–grupo (RF-13); materias quedan fuera. |
-| I-03 | La matriz permite a Administración crear y editar alumnos, pero ese rol está fuera de la Fase 1. | 02, 04 | En la primera versión crean alumnos Dirección y Administrador. |
-| I-04 | La matriz dice que solo el Administrador gestiona usuarios; las decisiones pendientes preguntan si también Dirección. | 02, 05 | Resuelta: solo el Administrador crea usuarios (D-03). |
-| I-05 | Requisitos y roles afirman “uno o más roles” por usuario; decisiones pendientes lo pregunta. | 01, 02, 05 | Resuelta: un usuario puede tener varios roles (D-02); el modelo usará una relación usuario–rol. |
-| I-06 | La matriz da consulta de bitácora a Dirección (Sí) y Administración (Limitado); decisiones pendientes pregunta quién. | 02, 05 | Administrador y Dirección, hasta resolver D-21. |
-| I-07 | La matriz permite a Dirección editar alumnos; decisiones pendientes pregunta si solo consulta. | 02, 05 | Se aplica la matriz hasta resolver D-15. |
-| I-08 | Las reglas generales dicen que las notificaciones automáticas “deben generarse”; el roadmap las ubica en Fase 2. | 03, 04 | Se sigue el roadmap: fuera de la primera versión. |
-| I-09 | El módulo 12 (Inscripciones y matrícula) no aparece en ninguna fase, aunque la Fase 1 necesita registrar alumnos y asignarlos a grupo. | 00, 01, 04 | Solo el registro del alumno y su asignación a grupo entran (RF-10, RF-11); reinscripciones y documentación quedan fuera. |
-| I-10 | La matriz da al Alumno consulta de su asistencia, pero no está definido si tendrá cuenta en la primera versión. | 02, 05 | Resuelta: sin cuentas de alumno en la primera versión (D-01). |
-| I-11 | Justificar faltas aparece en el módulo de padres y en la matriz, pero el roadmap lo ubica en Fase 2. | 01, 02, 04 | Se sigue el roadmap: fuera de la primera versión. |
-| I-12 | Los valores “Limitado” y “si aplica” de la matriz no están definidos. | 02 | Se tratan como “No” (mínimo privilegio) hasta definirse. |
-
-Clave de documentos: 00 resumen ejecutivo, 01 requisitos funcionales, 02 roles y permisos, 03 entidades y reglas, 04 roadmap, 05 decisiones pendientes.
-
-**Conflictos técnicos detectados al definir tecnologías:**
-
-- **I-13 — Evidencias dentro de Firestore vs. 5 MB.** Se eligió guardar las evidencias dentro de la base de datos con un máximo de 5 MB, pero un documento de Firestore admite como máximo 1 MiB. Opciones: bajar el límite a menos de 1 MiB, usar Cloud Storage for Firebase (requiere el plan Blaze con cuenta de facturación, aunque conserva una cuota sin costo) o guardar los archivos en el servidor del backend. Tratamiento: decisión futura (CC-03), antes del Sprint 3 (4 de noviembre), cuando se construye RF-19.
-- **I-14 — Dos lenguajes sin reparto definido.** Se eligieron JavaScript y Python, pero no se ha definido qué parte del sistema usa cada uno ni el framework. Tratamiento: decisión futura (CC-03), antes del Sprint 1 (7 de octubre), porque la Etapa II exige código.
-
-## 22. Evidencias de la Etapa I
-
-La etapa se entrega con 11 evidencias: el plan y los primeros artefactos prácticos que pide la materia (repositorio, diagramas, prototipos, estructura de base de datos y, si existe, código).
-
-| # | Evidencia | Qué demuestra | Formato | Nombre sugerido | Responsable |
-| --- | --- | --- | --- | --- | --- |
-| E-01 | Plan de Calidad (este documento) | Definición formal del proyecto y de sus criterios de calidad. | PDF | `E01_Plan_de_Calidad_v1.0.pdf` | Análisis y documentación |
-| E-02 | Repositorio del proyecto | Que el repositorio existe (github.com/StephAmv/nexoEdu), con estructura inicial, README y commits de los tres integrantes. | Enlace + captura PNG | `E02_Repositorio.png` | Líder del proyecto |
-| E-03 | Requisitos | RF y RNF con prioridad y criterio de aceptación. | PDF u hoja de cálculo | `E03_Requisitos_v1.0.xlsx` | Análisis y documentación |
-| E-04 | Roles y permisos | Matriz de permisos aplicable a la primera versión. | PDF u hoja de cálculo | `E04_Matriz_Permisos_v1.0.xlsx` | Análisis y documentación |
-| E-05 | Modelo inicial del sistema | Diagrama de casos de uso del alcance inicial y diagrama de arquitectura por módulos. | PNG o PDF | `E05_Casos_de_Uso.png`, `E05_Arquitectura.png` | Líder del proyecto |
-| E-06 | Prototipos | Pantallas clave: login, asistencia por grupo, reporte de conducta, vista del padre/tutor. | PNG o enlace al prototipo | `E06_Prototipo_<pantalla>.png` | Diseño de interfaz |
-| E-07 | Estructura inicial de base de datos | Modelo de datos (colecciones de Firestore) con Usuario, Rol, Alumno, Padre o tutor, Docente, Grupo, Grado, Ciclo escolar, Asistencia, Reporte de conducta, Evidencia y Bitácora. | PNG (draw.io) | `E07_Modelo_Datos.png` | Base de datos |
-| E-08 | Código inicial | Proyecto base funcionando (por ejemplo, pantalla de login). **Solo si ya existe.** | Enlace al commit + captura | `E08_Codigo_Inicial.png` | Desarrollo |
-| E-09 | Registro de métricas | Plantilla con M-01 a M-09 lista para el Sprint 1. | Hoja de cálculo | `E09_Registro_Metricas.xlsx` | Pruebas y calidad |
-| E-10 | Registro de control de cambios | Registro con CC-00 (línea base). | Hoja de cálculo | `E10_Control_de_Cambios.xlsx` | Líder del proyecto |
-| E-11 | Bitácora de participación | Actividades de cada integrante en la Etapa I (fecha, actividad, responsable, evidencia, tiempo, resultado). | Hoja de cálculo | `E11_Bitacora_Participacion.xlsx` | Cada integrante |
-
-E-11 no la pide la Etapa I, pero la sección 8 de la materia la exige durante todo el proyecto; conviene iniciarla ahora.
-
-## 23. Estructura de carpetas
-
-Se adapta la estructura propuesta para incluir la bitácora de participación y para que cada carpeta corresponda a una evidencia (E-01 a E-11). La carpeta vive dentro de `04_Documentacion` de la entrega final que pide la materia, así no se reorganiza en noviembre.
-
-```
-PROYECTO_FINAL_NEXOEDU/
-└── 04_Documentacion/
-    └── ETAPA_1_GESTION_CALIDAD/
-        ├── 01_PLAN_DE_CALIDAD/          E-01
-        ├── 02_REQUISITOS/               E-03
-        ├── 03_ROLES_Y_PERMISOS/         E-04
-        ├── 04_DIAGRAMAS/                E-05
-        ├── 05_PROTOTIPOS/               E-06
-        ├── 06_BASE_DE_DATOS/            E-07
-        ├── 07_REPOSITORIO/              E-02, E-08
-        ├── 08_METRICAS/                 E-09
-        ├── 09_CONTROL_DE_CAMBIOS/       E-10
-        ├── 10_RIESGOS/                  Registro de riesgos (sección 19)
-        ├── 11_BITACORA_PARTICIPACION/   E-11
-        └── 12_EVIDENCIAS/               Capturas y material de apoyo
-```
-
-Los documentos se nombran con versión (`_v1.0`, `_v1.1`) para que el control de cambios sea visible en los propios archivos.
-
-## 24. Trazabilidad
-
-Cada requisito tiene un criterio de calidad, un caso de prueba (CP con el mismo número que el requisito) y una evidencia. La columna Resultado se llena en las etapas III y IV.
-
-| Requisito | Criterio de calidad | Método de verificación | Evidencia | Resultado |
-| --- | --- | --- | --- | --- |
-| RF-01 Iniciar sesión | Seguridad | CP-01: credenciales válidas e inválidas | Bitácora de pruebas + capturas |  |
-| RF-02 Sesión segura | Seguridad | CP-02: acceso a página protegida sin sesión | Bitácora de pruebas |  |
-| RF-03 Menú según rol | Seguridad, Usabilidad | CP-03: un usuario por rol | Capturas del menú por rol |  |
-| RF-04 Restringir acciones | Seguridad | CP-04: matriz rol × acción con acceso directo | Matriz de pruebas de permisos |  |
-| RF-05 Restablecer contraseña | Seguridad | CP-05 | Bitácora de pruebas |  |
-| RF-06 Gestionar usuarios | Funcionalidad, Integridad | CP-06: alta, edición y duplicado | Bitácora de pruebas |  |
-| RF-07 Desactivar/reactivar | Seguridad, Trazabilidad | CP-07 | Bitácora de pruebas + registro en bitácora del sistema |  |
-| RF-08 Asignar roles | Seguridad | CP-08 | Bitácora de pruebas |  |
-| RF-09 Ciclo, grados y grupos | Integridad, Mantenibilidad | CP-09 + prueba de dos ciclos (RNF-03) | Bitácora de pruebas |  |
-| RF-10 Registrar alumnos | Funcionalidad, Integridad | CP-10: alta y duplicado por matrícula | Bitácora de pruebas |  |
-| RF-11 Alumno–grupo–ciclo | Integridad | CP-11 | Bitácora de pruebas |  |
-| RF-12 Padres/tutores | Funcionalidad, Seguridad | CP-12: tutor con dos hijos; alumno con dos tutores | Bitácora de pruebas |  |
-| RF-13 Docentes y grupos | Seguridad | CP-13 | Bitácora de pruebas |  |
-| RF-14 Editar alumnos | Trazabilidad | CP-14 | Registro en bitácora del sistema |  |
-| RF-15 Registrar asistencia | Funcionalidad, Integridad | CP-15: captura y duplicado por fecha | Bitácora de pruebas + capturas |  |
-| RF-16 Modificar asistencia | Trazabilidad | CP-16 | Registro en bitácora del sistema |  |
-| RF-17 Consultar asistencia | Funcionalidad, Rendimiento | CP-17 + medición RNF-09 | Bitácora de pruebas + mediciones |  |
-| RF-18 Reporte de conducta | Funcionalidad, Seguridad | CP-18: docente fuera de su grupo | Bitácora de pruebas |  |
-| RF-19 Evidencias | Funcionalidad, Seguridad | CP-19: subir y abrir; acceso por otro rol | Bitácora de pruebas |  |
-| RF-20 Consultar reportes | Seguridad | CP-20: visibilidad por rol | Matriz de pruebas de permisos |  |
-| RF-21 Incidencias | Funcionalidad | CP-21 | Bitácora de pruebas |  |
-| RF-22 Tutor: datos del alumno | Seguridad | CP-22: acceso cruzado entre tutores | Capturas del acceso rechazado |  |
-| RF-23 Tutor: asistencia | Funcionalidad, Rendimiento | CP-23 | Bitácora de pruebas |  |
-| RF-24 Tutor: conducta | Seguridad, Usabilidad | CP-24 + recorrido guiado | Bitácora de pruebas |  |
-| RF-25 Registrar bitácora | Trazabilidad | CP-25: una acción por tipo sensible | Capturas de la bitácora |  |
-| RF-26 Consultar bitácora | Seguridad, Trazabilidad | CP-26 | Bitácora de pruebas |  |
-| RNF-01 a RNF-10 | Según sección 10 | Método indicado en la sección 10 | Bitácora de pruebas y evidencias indicadas |  |
-
-## 25. Criterios de aceptación de la primera versión
-
-La primera versión se acepta solo si cumple las diez condiciones siguientes. Una interfaz sin funcionalidad no cuenta como avance.
-
-1. El 100 % de los requisitos de prioridad Alta está aceptado con su caso de prueba aprobado (M-01).
-2. Al menos el 80 % del total de requisitos comprometidos está aceptado, y los no aceptados están registrados como pospuestos en control de cambios.
-3. El 100 % de la matriz de pruebas de permisos está ejecutado y aprobado (M-03).
-4. No hay errores de prioridad alta abiertos (M-08).
-5. Al menos el 90 % de los casos de prueba ejecutados está aprobado en la regresión final (M-02).
-6. El flujo completo funciona de principio a fin con datos persistidos en la base de datos: el administrador crea usuarios y grupos → prefectura registra asistencia → un docente registra un reporte de conducta con evidencia → el padre/tutor consulta la asistencia y el reporte de su hijo → la bitácora muestra las acciones.
-7. Las pantallas principales funcionan en computadora, tablet y celular (RNF-04), con capturas como evidencia.
-8. Se ejecutó al menos un respaldo y una restauración de la base de datos (RNF-06).
-9. Las operaciones medidas responden en menos de 3 segundos en el entorno de pruebas (RNF-09).
-10. El repositorio contiene el código, el README con instrucciones de instalación y ejecución y credenciales de prueba, e historial de commits de los tres integrantes.
-
-## 26. Checklist final de la Etapa I
-
-Las filas 1 a 14 son los contenidos que la materia exige al Plan de Calidad; las 15 a 22, la evidencia práctica y de gestión.
-
-| # | Elemento | Requerido | Evidencia | Responsable | Estado |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Nombre del proyecto | Sí (materia) | Portada | Análisis y documentación | Completo (nexoEdu) |
-| 2 | Descripción de la problemática | Sí (materia) | Sección 4 | Análisis y documentación | Borrador |
-| 3 | Justificación | Sí (materia) | Sección 5 | Análisis y documentación | Borrador |
-| 4 | Usuarios a quienes está dirigido | Sí (materia) | Sección 8 | Análisis y documentación | Borrador |
-| 5 | Objetivo general | Sí (materia) | Sección 6 | Análisis y documentación | Borrador |
-| 6 | Alcance inicial | Sí (materia) | Sección 7 | Líder del proyecto | Borrador |
-| 7 | Requerimientos funcionales principales | Sí (materia) | Sección 9, E-03 | Análisis y documentación | Borrador |
-| 8 | Requerimientos no funcionales | Sí (materia) | Sección 10, E-03 | Análisis y documentación | Borrador |
-| 9 | Criterios de calidad | Sí (materia) | Sección 12 | Pruebas y calidad | Borrador |
-| 10 | Metodología de trabajo justificada | Sí (materia) | Sección 13 | Líder del proyecto | Borrador |
-| 11 | Integrantes y responsabilidades | Sí (materia) | Sección 14 | Líder del proyecto | Confirmado |
-| 12 | Herramientas y tecnologías propuestas | Sí (materia) | Sección 15 | Todo el equipo | Parcial; framework pospuesto (CC-03) |
-| 13 | Métricas o indicadores de calidad | Sí (materia) | Sección 16, E-09 | Pruebas y calidad | Borrador |
-| 14 | Mecanismo para registrar cambios | Sí (materia) | Sección 18, E-10 | Líder del proyecto | Borrador |
-| 15 | Repositorio creado | Sí (evidencia práctica) | E-02 | Líder del proyecto | Creado; falta README en la raíz |
-| 16 | Diagramas | Sí, según corresponda | E-05 | Líder del proyecto | Pendiente |
-| 17 | Prototipos o interfaces iniciales | Sí, según corresponda | E-06 | Diseño de interfaz | Pendiente |
-| 18 | Estructura de base de datos | Sí, según corresponda | E-07 | Base de datos | Pendiente |
-| 19 | Código inicial | Si existe | E-08 | Desarrollo | Pendiente |
-| 20 | Registro de riesgos | Recomendado | Sección 19 | Líder del proyecto | Borrador |
-| 21 | Bitácora de participación iniciada | Recomendado (sección 8 de la materia) | E-11 | Cada integrante | Pendiente |
-| 22 | Autorización del proyecto por la docente | Sí, si el proyecto no está en la lista sugerida | Correo o registro de la autorización | Líder del proyecto | Obtenida |
-
-## 27. Conclusión
-
-Esta etapa deja una base controlada para el desarrollo: el equipo se compromete con la Fase 1 del roadmap (26 requisitos) y declara explícitamente que comunicación, académico, administración y reportes avanzados son trabajo futuro.
-
-Cada requisito tiene criterio de aceptación, caso de prueba y evidencia, lo que permitirá demostrar en las siguientes etapas qué se cumplió y qué no. Las métricas son simples y medibles con herramientas al alcance del equipo, y el control de cambios protege la viabilidad frente al riesgo principal: que el alcance crezca sin control.
-
-Las decisiones pendientes y las inconsistencias quedan visibles, con fecha para resolverse, en lugar de ocultarse. Con esta base, el equipo puede decir con claridad “esto sí lo vamos a hacer” y “esto todavía no”, y la arquitectura queda preparada para que las siguientes fases crezcan sobre ella sin rehacerla.
-
-## 28. Información que necesito proporcionar
-
-Para convertir este borrador en la versión final de entrega faltan estos datos:
-
-- [x] Nombre del proyecto: nexoEdu.
-- [x] Roles confirmados (sección 14).
-- [x] Autorización de la docente obtenida. Conviene guardar el correo o mensaje como evidencia.
-- [x] Escuela destinataria: preparatoria genérica, caso simulado.
-- [x] Fecha de entrega: 5 de octubre de 2026.
-- [x] Repositorio: github.com/StephAmv/nexoEdu.
-- [x] Decisiones D-01 a D-06, D-11, D-15 y D-17 a D-21 resueltas (CC-01, CC-02).
-- [x] Framework, reparto JavaScript/Python y almacenamiento de evidencias: pospuestos como decisiones futuras (CC-03).
-- [ ] **README en la raíz del repositorio** con nombre, integrantes, tecnologías e instrucciones (hoy el repositorio solo tiene la carpeta docs).
-- [ ] **Artefactos E-05 a E-07**: diagrama de casos de uso y de arquitectura, prototipos y modelo de datos. E-08 (código) solo si ya existe.
-- [ ] **Commits de los tres integrantes** en el repositorio, para la evidencia E-02.
